@@ -12,7 +12,7 @@
     />
   </head>
   <body class="d-flex flex-column align-items-center">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary m-3">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary m-bottom-3 w-100">
       <div class="container-fluid">
         <a class="navbar-brand" href="#" style="max-width: 100px"
           ><img src="./logo.jpg" alt="logo image" class="img-fluid"
@@ -31,19 +31,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Saldi</a>
+              <a class="nav-link" href="#saldi">Saldi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Welcome Summer</a>
+              <a class="nav-link" href="#welcomeSummer">Welcome Summer</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Last Minute</a>
+              <a class="nav-link" href="#lastMinute">Last Minute</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Recensioni</a>
+              <a class="nav-link" href="#reviews">Recensioni</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -58,18 +58,20 @@
         </div>
       </div>
     </nav>
-    <div class="container bg-body-tertiary m-3 text-center p-5">
-      <h1>Vagabond -</h1>
+    <div class="container bg-body-tertiary m-3 text-center p-5 rounded-2">
+      <h1 id="Home">Vagabond -</h1>
       <p>Feel the freedom</p>
       <hr />
       <h3>Scopri le destinazioni più calde del momento!</h3>
-      <button type="button" class="btn btn-primary">Prenota ora</button>
+      <button type="button" class="btn btn-primary rounded-2 mt-4">
+        Prenota ora
+      </button>
     </div>
     <div class="container m-3">
-      <h2>Saldi</h2>
+      <h2 id="saldi">Saldi</h2>
       <div class="row col-">
         <div class="col-6 col-md-4 col-lg-3">
-          <div class="card">
+          <div class="card border border-info border-2">
             <img
               src="./Amalfi-coast-scaled.webp"
               class="card-img-top"
@@ -81,12 +83,12 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Voluptatibus maxime modi iste, earum unde accusamus.
               </p>
-              <a href="#" class="btn btn-primary">Prenota</a>
+              <a href="#" class="btn btn-info">Prenota</a>
             </div>
           </div>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
-          <div class="card">
+          <div class="card border border-info border-2">
             <img
               src="./Amalfi-coast-scaled.webp"
               class="card-img-top"
@@ -98,12 +100,12 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Voluptatibus maxime modi iste, earum unde accusamus.
               </p>
-              <a href="#" class="btn btn-primary">Prenota</a>
+              <a href="#" class="btn btn-info">Prenota</a>
             </div>
           </div>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
-          <div class="card">
+          <div class="card border border-info border-2">
             <img
               src="./Amalfi-coast-scaled.webp"
               class="card-img-top"
@@ -115,12 +117,12 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Voluptatibus maxime modi iste, earum unde accusamus.
               </p>
-              <a href="#" class="btn btn-primary">Prenota</a>
+              <a href="#" class="btn btn-info">Prenota</a>
             </div>
           </div>
         </div>
         <div class="col-6 d-md-none d-lg-block col-lg-3">
-          <div class="card">
+          <div class="card border border-info border-2">
             <img
               src="./Amalfi-coast-scaled.webp"
               class="card-img-top"
@@ -132,17 +134,17 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Voluptatibus maxime modi iste, earum unde accusamus.
               </p>
-              <a href="#" class="btn btn-primary">Prenota</a>
+              <a href="#" class="btn btn-info">Prenota</a>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="container m-3">
-      <h2>Welcome Summer</h2>
+      <h2 id="welcomeSummer">Welcome Summer</h2>
       <div class="row g-4">
-        <div class="col-6 col-lg-4">
-          <div class="card">
+        <div class="col-6 col-lg-4 col-xl-2">
+          <div class="card shadow-lg">
             <img
               src="./Amalfi-coast-scaled.webp"
               class="card-img-top"
@@ -158,8 +160,8 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-4">
-          <div class="card">
+        <div class="col-6 col-lg-4 col-xl-2">
+          <div class="card shadow-lg">
             <img
               src="./Amalfi-coast-scaled.webp"
               class="card-img-top"
@@ -175,8 +177,8 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-4">
-          <div class="card">
+        <div class="col-6 col-lg-4 col-xl-2">
+          <div class="card shadow-lg">
             <img
               src="./Amalfi-coast-scaled.webp"
               class="card-img-top"
@@ -192,8 +194,8 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-4">
-          <div class="card">
+        <div class="col-6 col-lg-4 col-xl-2">
+          <div class="card shadow-lg">
             <img
               src="./Amalfi-coast-scaled.webp"
               class="card-img-top"
@@ -209,8 +211,8 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-4">
-          <div class="card">
+        <div class="col-6 col-lg-4 col-xl-2">
+          <div class="card shadow-lg">
             <img
               src="./Amalfi-coast-scaled.webp"
               class="card-img-top"
@@ -226,8 +228,8 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-4">
-          <div class="card">
+        <div class="col-6 col-lg-4 col-xl-2">
+          <div class="card shadow-lg">
             <img
               src="./Amalfi-coast-scaled.webp"
               class="card-img-top"
@@ -246,20 +248,21 @@
       </div>
     </div>
     <div class="container m-3">
+      <h2 class="d-sm-none d-md-block">Offerta Del Giorno</h2>
       <div class="row">
         <div class="col-6 col-lg-8">
           <img
             src="./Amalfi-coast-scaled.webp"
             alt="Costiera Amalfitana"
-            class="img-fluid"
+            class="img-fluid rounded-2 shadow"
           />
         </div>
         <div class="col-6 col-lg-4">
-          <h2>Amalfi Coast</h2>
+          <h2 id="lastMinute">Amalfi Coast</h2>
           <p>22/7/26 - 29/7/26</p>
           <h6>Ville a partire da 500€</h6>
           <p>non fartele sfuggire!</p>
-          <button type="button" class="btn btn-dark">Offerta!</button>
+          <button type="button" class="btn btn-dark rounded-5">Offerta!</button>
         </div>
       </div>
     </div>
@@ -287,7 +290,7 @@
       </div>
     </div>
     <div class="container m-3">
-      <h2 class="m-3">Dicono di noi</h2>
+      <h2 id="reviews" class="m-3">Dicono di noi</h2>
       <div class="row">
         <div class="col">
           <div class="row">
@@ -343,62 +346,13 @@
   </body>
 </html>
 <!--  
-Esercizi:
-
-1) Implementa una navbar con questi elementi di menu:
-Home
-Saldi
-Welcome Summer
-Last Minute
-Recensioni
-
-Collegherai ogni sezione della pagina agli elementi del menu corrispondenti. 
 
 
 
-2) Aggiungi un logo alla navbar, un qualsiasi logo di agenzia di viaggi, anche inventata.
-
-
-
-3) Aggiungi una sezione introduttiva con il nome, il payoff dell'agenzia, 
-una breve descrizione in corsivo e una call-to-action (bottone) "Prenota ora" di colore azzurro chiaro e testo bianco e grassetto
-
-Il background della sezione sarà grigio chiaro e con bordi arrotondati e del padding generoso all'interno
-
-
-
-4) Implementa la sezione "Saldi". Qui mostrerai 4 destinazioni.
-
-In questa sezione dovranno esserci:
-
-4 card per destinazioni per linea a schermo grande - desktop (quattro sulla stessa linea)
-3 card per destinazioni per linea a schermo medio  - tablet  (una dovrà scomparire)
-2 card per destinazioni per linea a schermo piccolo - mobile (due per linea)
-
-le card avranno un bordo di 2px azzurro chiaro, il bottone azzurro chiaro e testo default
-
-5) Implementa la sezione "Welcome Summer". Qui mostrerai 6 destinazioni al tuo utente. (nessun bordo, ma stesso stile dei bottoni precedenti)
-
-In questa sezione dovranno esserci:
-
-6 card per destinazioni per linea a schermo extra large
-3 card per destinazioni per linea a schermo grande (desktop)
-2 card per destinazioni per linea a schermo medio (tablet)
-2 card per destinazioni per linea a schermo piccolo (mobile)
-
-6) Implementa la sezione "Offerta del giorno". Qui avrai:
-
-66% dello spazio dedicato all'immagine del luogo di destinazione
-33% dedicato al nome, date, prezzo e un badge con "best offer" come testo
-
-l'immagine avrà i bordi arrotondati e un'ombra leggera
 per il contenuto: il nome dovrà essere più grande del resto,
 le date dovranno essere formattate con font "monospace",
 il prezzo dovrà essere definito come "lead"
 e il badge sarà scuro
-
-
-7) Rendi invisibile la sezione "Offerta del giorno" su schermi piccoli.
 
 8) Aggiungi nella sezione "Welcome Summer" un'ombra grande ad ogni card.
 
