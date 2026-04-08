@@ -1,20 +1,348 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-
-    <!-- Abbiamo bisogno di un sito web per un'agenzia di viaggi!
-
-In questa pagina aggiungerai destinazioni di posti che sogni di visitare in futuro.
-
-Il progetto non richiede alcuna customizzazione di CSS, dovrai crearlo interamente usando le classi di bootstrap, sia per quello che riguarda il layout che lo stile.
-
-
-Testa frequentemente il tuo lavoro nelle 3 principali risoluzioni (mobile, tablet, desktop) usando i developer tools del browser nella sezione emulazione device, per una maggiore precisione.
-
-Inizia utilizzando i componenti esistenti di Bootstrap 5 per creare la tua pagina (modificali all'occorrenza utilizzando le utility classes di bootstrap: colori, spazi, margini, dimensioni etc...)
-Usa container > row > col-* in questo ordine per ottenere un layout responsive perfetto.
-
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="d-flex flex-column align-items-center">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary m-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="max-width: 100px"
+          ><img src="./logo.jpg" alt="logo image" class="img-fluid"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Saldi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Welcome Summer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Last Minute</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recensioni</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Cerca posti da sogno"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-danger" type="submit">Cerca</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container bg-body-tertiary m-3 text-center p-5">
+      <h1>Vagabond -</h1>
+      <p>Feel the freedom</p>
+      <hr />
+      <h3>Scopri le destinazioni più calde del momento!</h3>
+      <button type="button" class="btn btn-primary">Prenota ora</button>
+    </div>
+    <div class="container m-3">
+      <h2>Saldi</h2>
+      <div class="row col-">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img
+              src="./Amalfi-coast-scaled.webp"
+              class="card-img-top"
+              alt="La costiera Amalfitana"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Amalfi</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatibus maxime modi iste, earum unde accusamus.
+              </p>
+              <a href="#" class="btn btn-primary">Prenota</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img
+              src="./Amalfi-coast-scaled.webp"
+              class="card-img-top"
+              alt="La costiera Amalfitana"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Amalfi</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatibus maxime modi iste, earum unde accusamus.
+              </p>
+              <a href="#" class="btn btn-primary">Prenota</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img
+              src="./Amalfi-coast-scaled.webp"
+              class="card-img-top"
+              alt="La costiera Amalfitana"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Amalfi</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatibus maxime modi iste, earum unde accusamus.
+              </p>
+              <a href="#" class="btn btn-primary">Prenota</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 d-md-none d-lg-block col-lg-3">
+          <div class="card">
+            <img
+              src="./Amalfi-coast-scaled.webp"
+              class="card-img-top"
+              alt="La costiera Amalfitana"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Amalfi</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatibus maxime modi iste, earum unde accusamus.
+              </p>
+              <a href="#" class="btn btn-primary">Prenota</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container m-3">
+      <h2>Welcome Summer</h2>
+      <div class="row g-4">
+        <div class="col-6 col-lg-4">
+          <div class="card">
+            <img
+              src="./Amalfi-coast-scaled.webp"
+              class="card-img-top"
+              alt="La costiera Amalfitana"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Amalfi</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatibus maxime modi iste, earum unde accusamus.
+              </p>
+              <a href="#" class="btn btn-primary">Prenota</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-4">
+          <div class="card">
+            <img
+              src="./Amalfi-coast-scaled.webp"
+              class="card-img-top"
+              alt="La costiera Amalfitana"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Amalfi</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatibus maxime modi iste, earum unde accusamus.
+              </p>
+              <a href="#" class="btn btn-primary">Prenota</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-4">
+          <div class="card">
+            <img
+              src="./Amalfi-coast-scaled.webp"
+              class="card-img-top"
+              alt="La costiera Amalfitana"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Amalfi</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatibus maxime modi iste, earum unde accusamus.
+              </p>
+              <a href="#" class="btn btn-primary">Prenota</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-4">
+          <div class="card">
+            <img
+              src="./Amalfi-coast-scaled.webp"
+              class="card-img-top"
+              alt="La costiera Amalfitana"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Amalfi</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatibus maxime modi iste, earum unde accusamus.
+              </p>
+              <a href="#" class="btn btn-primary">Prenota</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-4">
+          <div class="card">
+            <img
+              src="./Amalfi-coast-scaled.webp"
+              class="card-img-top"
+              alt="La costiera Amalfitana"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Amalfi</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatibus maxime modi iste, earum unde accusamus.
+              </p>
+              <a href="#" class="btn btn-primary">Prenota</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-4">
+          <div class="card">
+            <img
+              src="./Amalfi-coast-scaled.webp"
+              class="card-img-top"
+              alt="La costiera Amalfitana"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Amalfi</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatibus maxime modi iste, earum unde accusamus.
+              </p>
+              <a href="#" class="btn btn-primary">Prenota</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container m-3">
+      <div class="row">
+        <div class="col-6 col-lg-8">
+          <img
+            src="./Amalfi-coast-scaled.webp"
+            alt="Costiera Amalfitana"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-6 col-lg-4">
+          <h2>Amalfi Coast</h2>
+          <p>22/7/26 - 29/7/26</p>
+          <h6>Ville a partire da 500€</h6>
+          <p>non fartele sfuggire!</p>
+          <button type="button" class="btn btn-dark">Offerta!</button>
+        </div>
+      </div>
+    </div>
+    <div class="container m-3">
+      <h2>Last Minute</h2>
+      <div class="row">
+        <div class="col-2">
+          <img class="img-fluid" src="./Amalfi-coast-scaled.webp" />
+        </div>
+        <div class="col-2">
+          <img class="img-fluid" src="./Amalfi-coast-scaled.webp" />
+        </div>
+        <div class="col-2">
+          <img class="img-fluid" src="./Amalfi-coast-scaled.webp" />
+        </div>
+        <div class="col-2">
+          <img class="img-fluid" src="./Amalfi-coast-scaled.webp" />
+        </div>
+        <div class="col-2">
+          <img class="img-fluid" src="./Amalfi-coast-scaled.webp" />
+        </div>
+        <div class="col-2">
+          <img class="img-fluid" src="./Amalfi-coast-scaled.webp" />
+        </div>
+      </div>
+    </div>
+    <div class="container m-3">
+      <h2 class="m-3">Dicono di noi</h2>
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <div class="col-1">
+              <img src="./user.avif" rel="user photo" class="img-fluid" />
+            </div>
+            <div class="col-10">
+              <h3>Username</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                laborum obcaecati voluptas repellat eum quae blanditiis.
+                Repellendus, nulla dolore minus quibusdam, distinctio ex libero
+                natus obcaecati eos doloribus veritatis doloremque?
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <img src="./user.avif" rel="user photo" class="img-fluid" />
+            </div>
+            <div class="col-10">
+              <h3>Username</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                laborum obcaecati voluptas repellat eum quae blanditiis.
+                Repellendus, nulla dolore minus quibusdam, distinctio ex libero
+                natus obcaecati eos doloribus veritatis doloremque?
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <img src="./user.avif" rel="user photo" class="img-fluid" />
+            </div>
+            <div class="col-10">
+              <h3>Username</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                laborum obcaecati voluptas repellat eum quae blanditiis.
+                Repellendus, nulla dolore minus quibusdam, distinctio ex libero
+                natus obcaecati eos doloribus veritatis doloremque?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+<!--  
 Esercizi:
 
 1) Implementa una navbar con questi elementi di menu:
@@ -26,12 +354,18 @@ Recensioni
 
 Collegherai ogni sezione della pagina agli elementi del menu corrispondenti. 
 
+
+
 2) Aggiungi un logo alla navbar, un qualsiasi logo di agenzia di viaggi, anche inventata.
+
+
 
 3) Aggiungi una sezione introduttiva con il nome, il payoff dell'agenzia, 
 una breve descrizione in corsivo e una call-to-action (bottone) "Prenota ora" di colore azzurro chiaro e testo bianco e grassetto
 
 Il background della sezione sarà grigio chiaro e con bordi arrotondati e del padding generoso all'interno
+
+
 
 4) Implementa la sezione "Saldi". Qui mostrerai 4 destinazioni.
 
@@ -92,8 +426,3 @@ EXTRAS
 17) Crea una funzione che rimuova tutte le "card" dalla pagina
 
 -->
-</head>
-
-<body></body>
-
-</html>
